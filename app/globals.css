@@ -13,6 +13,11 @@
     --foreground: #ededed;
   }
 }
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 
 body {
   color: var(--foreground);
