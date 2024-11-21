@@ -109,7 +109,15 @@ export default function Home() {
 
       </div>
       </div>
+      <br></br>
 
+<hr className="bg-blue-300"></hr>
+  <footer>
+    <div className="backdrop-blur-sm bg-[#0d1224]/20 h-20 flex justify-center items-center">
+    <h1>©  Developer Portfolio by Yadnyesh Dashpute</h1>
+
+    </div>
+  </footer>
       </div>
     </AnimatedBeam>
 
