@@ -1,4 +1,4 @@
-import { cn } from "../libs/utils"
+import { cn } from "../libs/utils";
 
 interface AnimatedTrailProps extends React.HTMLAttributes<HTMLDivElement> {
   /**
@@ -11,6 +11,11 @@ interface AnimatedTrailProps extends React.HTMLAttributes<HTMLDivElement> {
 
   trailColor?: string;
   trailSize?: "sm" | "md" | "lg";
+}
+
+interface CustomStyle extends React.CSSProperties {
+  "--duration"?: string;
+  "--angle"?: string;
 }
 
 const sizes = {
@@ -31,20 +36,27 @@ export default function Bordertrail({
   return (
     <div
       {...props}
-      className={cn("relative h-fit w-fit overflow-hidden rounded-2xl bg-zinc-500 m-4 p-px", className)}
+      className={cn(
+        "relative h-fit w-fit overflow-hidden rounded-2xl bg-zinc-500 m-4 p-px",
+        className
+      )}
     >
+      {/* Animated Trail */}
       <div
         className="absolute inset-0 h-full w-full animate-trail"
         style={{
-          "--duration": duration ?? "10s",
+          "--duration": duration,
           "--angle": "0deg",
-          background: `conic-gradient(from var(--angle) at 50% 50%, transparent ${100 - sizes[trailSize]}%, ${trailColor})`,
-        }}
+          background: `conic-gradient(from var(--angle) at 50% 50%, transparent ${
+            100 - sizes[trailSize]
+          }%, ${trailColor})`,
+        } as CustomStyle}
       />
+      {/* Inner Content */}
       <div
         className={cn(
-          "relative  overflow-hidden rounded-[15px]  bg-[#11152c] w-36 h-32",
-          contentClassName,
+          "relative overflow-hidden rounded-[15px] bg-[#11152c] w-36 h-32",
+          contentClassName
         )}
       >
         {children}

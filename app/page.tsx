@@ -8,7 +8,6 @@ import animationData from "../app/Animation - 1731934877566.json"
 import Lottie from "lottie-react";
 import Marquee from "./components/skills/marquee";
 import { SkillC } from "./components/skills/skillc";
-import Bordertrail from "./components/bordertrail";
 import Card from "./components/project-section/card";
 
 
