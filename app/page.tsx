@@ -1,14 +1,14 @@
 "use client"
-import AnimatedBeam from "../components/background/animatedbeam";
-import Navbar from "../components/navbar";
-import { Intro } from "../components/subsection/intro";
-import Texteditor from "../components/subsection/texteditor";
-import Projectcard from "../components/projects/projectcard"
+import AnimatedBeam from "../app/components/background/animatedbeam";
+import Navbar from "../app/components/navbar";
+import { Intro } from "../app/components/subsection/intro";
+import Texteditor from "../app/components/subsection/texteditor";
+import Projectcard from "../app/components/projects/projectcard"
 import animationData from "../app/Animation - 1731934877566.json"
 import Lottie from "lottie-react";
-import Marquee from "../components/skills/marquee";
-import { SkillC } from "../components/skills/skillc";
-import Card from "../components/project-section/card";
+import Marquee from "../app/components/skills/marquee";
+import { SkillC } from "../app/components/skills/skillc";
+import Card from "../app/components/project-section/card";
 
 
 export default function Home() {

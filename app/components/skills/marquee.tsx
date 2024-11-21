@@ -1,4 +1,4 @@
-import { cn } from "../../app/libs/utils"
+import { cn } from "../../libs/utils";
 
 interface MarqueeProps extends React.HTMLAttributes<HTMLDivElement> {
   /**

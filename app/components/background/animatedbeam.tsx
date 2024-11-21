@@ -7,7 +7,7 @@ interface CustomCSSProperties extends CSSProperties {
 
 import { useEffect, useRef, useState } from "react";
 
-import { cn } from "../../app/libs/utils";
+import { cn } from "../../libs/utils";
 
 function Beam({ index }: { index: number }) {
   const flag = index % 8 === 0;
