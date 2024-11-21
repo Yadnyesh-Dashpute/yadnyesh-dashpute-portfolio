@@ -1,4 +1,4 @@
-import { cn } from "../libs/utils";
+import { cn } from "../app/libs/utils";
 
 interface AnimatedTrailProps extends React.HTMLAttributes<HTMLDivElement> {
   /**

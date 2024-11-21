@@ -13,18 +13,15 @@ export default function Navbar() {
             </div>
             <div className="hidden text-3xl lg:flex items-center space-x-8 flex-wrap md:flex-nowrap m-8 p-2">
                 <Link
-                    href="/"
+                    href="#1"
                     className="flex items-center sm:text-sm md:text-base text-white-700 hover:text-pink-500 transition duration-300 ease-in-out"
                 >
                     <FaJsSquare className="mr-1" /> Home.js
                 </Link>
 
-                <Link href="/" className="flex items-center text-xs sm:text-sm md:text-base text-white-700 hover:text-pink-500 transition duration-300 ease-in-out">
+                <a href="#2" className="flex items-center text-xs sm:text-sm md:text-base text-white-700 hover:text-pink-500 transition duration-300 ease-in-out">
                     <FaReact className="mr-1 text-blue-500" /> Projects.tsx
-                </Link>
-                <Link href="/" className="flex items-center text-xs sm:text-sm md:text-base text-white-700 hover:text-pink-500 transition duration-300 ease-in-out">
-                    <FaHtml5 className="mr-1 text-orange-500" /> About.html
-                </Link>
+                </a>
                 <Link href="/" className="flex items-center text-xs sm:text-sm md:text-base text-white-700 hover:text-pink-500 transition duration-300 ease-in-out">
                     <BiSolidFileTxt className="mr-1 text-gray-500" /> Resume.txt
                 </Link>

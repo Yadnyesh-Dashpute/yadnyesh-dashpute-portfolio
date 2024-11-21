@@ -1,23 +1,28 @@
 "use client"
-import AnimatedBeam from "./components/background/animatedbeam";
-import Navbar from "./components/navbar";
-import { Intro } from "./components/subsection/intro";
-import Texteditor from "./components/subsection/texteditor";
-import Projectcard from "./components/projects/projectcard"
+import AnimatedBeam from "../components/background/animatedbeam";
+import Navbar from "../components/navbar";
+import { Intro } from "../components/subsection/intro";
+import Texteditor from "../components/subsection/texteditor";
+import Projectcard from "../components/projects/projectcard"
 import animationData from "../app/Animation - 1731934877566.json"
 import Lottie from "lottie-react";
-import Marquee from "./components/skills/marquee";
-import { SkillC } from "./components/skills/skillc";
-import Card from "./components/project-section/card";
+import Marquee from "../components/skills/marquee";
+import { SkillC } from "../components/skills/skillc";
+import Card from "../components/project-section/card";
 
 
 export default function Home() {
   return (
+    
+
     <AnimatedBeam>
-      <div className="h-full  w-full ">
+      <div className="h-full  w-full">
 
         {/* Navigation Bar Components */}
+        <section id="1">
+
         <div className="mt-5">
+
           <Navbar />
         </div>
 
@@ -32,13 +37,14 @@ export default function Home() {
         <Texteditor/>
 
         </div>
-        </div>
 
+        </div>
+        </section>
 
     <hr className="bg-blue-300 mt-6"></hr>
         {/* Education */}
 
-        <div className="flex justify-center items-center">
+        <div id="2" className="flex justify-center items-center">
         <h1 className="bg-[#1a1443] w-fit text-white p-2 px-5 mt-9 text-xl rounded-md flex justify-center items-center">Education</h1>
         </div>
         <br></br>
