@@ -23,7 +23,7 @@ const project = {
 
   return (
 
-    <div className="max-w-xl max-h-dvh bg-[#0b0e32] rounded-lg shadow-lg p-4 text-[0.6rem] lg:text-[1.1rem] lg:max-w-2xl lg:max-h-dvh ">
+    <div className="max-w-xl max-h-dvh bg-[#0b0e32] rounded-lg shadow-lg p-4 text-[0.55rem] lg:text-[1.1rem] lg:max-w-2xl lg:max-h-dvh ">
       {/* Mac Window UI (Fake) */}
       <div className="flex items-center mb-2">
 

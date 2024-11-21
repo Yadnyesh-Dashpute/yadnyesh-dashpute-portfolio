@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { FaReact, FaJsSquare, FaHtml5 } from "react-icons/fa";
+import { FaReact, FaJsSquare } from "react-icons/fa";
 import { BiSolidFileTxt, BiLogoTailwindCss } from "react-icons/bi";
 
 export default function Navbar() {

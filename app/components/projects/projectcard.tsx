@@ -2,7 +2,8 @@
 import { useCallback, useRef } from "react";
 import { FaUserGraduate } from "react-icons/fa";
 import { useMousePosition } from "./use-mouse-position"
-import { cn } from "../../app/libs/utils"
+import { cn } from "../../libs/utils";
+
 
 function calculateCardRotation({
   currentX,
