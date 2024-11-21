@@ -70,7 +70,7 @@ export default function Marquee({
       {applyMask && (
         <div
           className={cn(
-            "pointer-events-none absolute inset-0 z-10 h-full w-full from-white/50 from-5% via-transparent via-50% to-white/50 to-95% dark:from-gray-800/50 dark:via-transparent dark:to-gray-800/50",
+            "pointer-events-none absolute inset-0 z-10 h-full w-full ",
             {
               "bg-gradient-to-b": vertical,
               "bg-gradient-to-r": !vertical,
