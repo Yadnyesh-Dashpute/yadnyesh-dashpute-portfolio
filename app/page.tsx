@@ -113,8 +113,8 @@ export default function Home() {
 
 <hr className="bg-blue-300"></hr>
   <footer>
-    <div className="backdrop-blur-sm bg-[#0d1224]/20 h-20 flex justify-center items-center">
-    <h1>©  Developer Portfolio by Yadnyesh Dashpute</h1>
+    <div className="backdrop-blur-sm bg-[#0d1224]/20 h-20 flex justify-center items-center text-white font-semibold">
+    <h1>©  Developer Portfolio by <span className="text-[#16f2b3]">Yadnyesh Dashpute</span> </h1>
 
     </div>
   </footer>
