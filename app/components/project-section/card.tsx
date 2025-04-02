@@ -1,58 +1,50 @@
-"use client"
+"use client";
+
+import Image from "next/image";
 import React from "react";
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { FaGithub } from "react-icons/fa";
+import { CardBody, CardContainer, CardItem } from "../../../components/ui/3d-card";
+import Link from "next/link";
 
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
-
-
-export default function Texteditor() {
-  const codeString = `
-const project = {
-   name:'Find Your Hostel',
-   tools: ['NodeJS', 'Material UI', 'HTML5', 'CSS', 'Bootstrap', 
-   'MySQL', 'Express'],
-   myRole:Backend Developer,
-   Description: A streamlined website that connects students 
-   with nearby hostels effortlessly. Key features include easy 
-   communication between students and hostel owners, detailed 
-   residence information, tour booking, user reviews, 
-   and map integration for location-based decisions.,
-    
-};
-    `;
-
+export function Card({ title, description, imageUrl,githubLink }:any) {
   return (
+    <CardContainer className="inter-var">
+      <CardBody className="bg-[#131327] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[20rem] sm:w-[25rem] h-auto rounded-xl p-4 border">
+      <CardItem translateZ="50" className="w-full mt-4">
+          <Image
+            src={imageUrl}
+            height="800"
+            width="800"
+            className="h-48 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
+        </CardItem>
 
-    <div className="max-w-xl max-h-dvh bg-[#0b0e32] rounded-lg shadow-lg p-4 text-[0.55rem] lg:text-[1.1rem] lg:max-w-2xl lg:max-h-dvh ">
-      {/* Mac Window UI (Fake) */}
-      <div className="flex items-center mb-2">
-
-      <div className="flex items-center gap-2 ml-4">
-        <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-        <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
-        <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+        <CardItem
+          translateZ="60"
+          className="text-lg font-bold text-white mt-5">
+          {title}
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="70"
+          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+        >
+        {description}
+        </CardItem>
+        
+        <div className="flex justify-between items-center mt-10">
+        <CardItem
+    translateZ={20}
+    as={Link}
+    href={githubLink} // Replace with your GitHub link
+    target="_blank"
+    className="px-3 py-2 rounded-lg bg-black dark:bg-white dark:text-black text-white text-xs font-bold flex items-center gap-2"
+  >
+    <FaGithub className="text-lg" /> GitHub
+  </CardItem>
         </div>
-        <span className="flex-grow text-center  text-[#16f2b3] mr-14 font-semibold">My Project</span>
-
-      </div>
-      <hr className="border-0 h-1 bg-white rounded-full mb-2"></hr>
-      {/* Syntax Highlighted Code */}
-      <SyntaxHighlighter
-        language="javascript"
-        style={dracula}
-        customStyle={{
-          backgroundColor: "transparent",
-          overflow:"hidden",
-          lineHeight: "1.2",
-          whiteSpace: "pre-wrap", // Ensures wrapping
-          wordBreak: "break-word", // Breaks long words
-          fontFamily: "'Fira Code', monospace", // Custom font
-          
-        }}
-      >
-        {codeString}
-      </SyntaxHighlighter>
-    </div>
-
+      </CardBody>
+    </CardContainer>
   );
 }

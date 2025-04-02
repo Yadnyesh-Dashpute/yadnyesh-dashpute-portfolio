@@ -8,7 +8,7 @@ import animationData from "../app/Animation - 1731934877566.json"
 import Lottie from "lottie-react";
 import Marquee from "../app/components/skills/marquee";
 import { SkillC } from "../app/components/skills/skillc";
-import Card from "../app/components/project-section/card";
+import {Card} from "../app/components/project-section/card";
 
 
 export default function Home() {
@@ -99,18 +99,44 @@ export default function Home() {
         <h1 className="bg-[#1a1443] w-fit text-white p-2 px-5 mt-4 text-xl rounded-md flex justify-center items-center">Projects</h1>
       </div>
       
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center p-4">
+  <Card 
+    title="NutriScan" 
+    description="A data science-based project that scans packaged food content and categorizes it as healthy, neutral, or unhealthy."
+    imageUrl="/images/Nutriscan.jpg" 
+    githubLink="https://github.com/Yadnyesh-Dashpute/Nutri-Scan"
+  />
+
+  <Card 
+    title="Krushi Mitra" 
+    description="An AI-driven solution that detects pests in farms and suggests suitable pesticides."
+    imageUrl="/images/Krushimitra.jpg" 
+    githubLink="https://github.com/Yadnyesh-Dashpute/Krushi-Mitra"
+  />
+
+  <Card 
+    title="Portfolio Website" 
+    description="I'm Yadnyesh, a passionate MERN stack developer and tech enthusiast. 
+    I specialize in building scalable web applications, solving complex problems, and continuously exploring new technologies."
+    imageUrl="/images/portfolio.jpg" 
+    githubLink="https://yadnyesh-dashpute-portfolio.vercel.app/"
+  />
+
+  <Card 
+    title="Border Surveillance System" 
+    description="Developed a real-time surveillance system that monitors restricted areas like borders and bank lockers 24/7. Enhances security with smart automation."
+    imageUrl="/images/border.jpg" 
+    githubLink="https://github.com/Yadnyesh-Dashpute/Border-Surveillance-System-Project"
+  />
+</div>
     
-    <div className="flex justify-center items-center">
 
-    <div className="mt-10">
-      <Card/>
-      <br></br>
-      <Card/>
 
-      </div>
-      </div>
-      <br></br>
+       
+    
 
+    {/* Footer */}
+    
 <hr className="bg-blue-300"></hr>
   <footer>
     <div className="backdrop-blur-sm bg-[#0d1224]/20 h-20 flex justify-center items-center text-white font-semibold">
