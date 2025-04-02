@@ -6,7 +6,14 @@ import { FaGithub } from "react-icons/fa";
 import { CardBody, CardContainer, CardItem } from "../../../components/ui/3d-card";
 import Link from "next/link";
 
-export function Card({ title, description, imageUrl,githubLink }:any) {
+type CardProps = {
+  title: string;
+  description: string;
+  imageUrl: string;
+  githubLink?: string; 
+};
+
+export function Card({ title, description, imageUrl,githubLink }:CardProps) {
   return (
     <CardContainer className="inter-var">
       <CardBody className="bg-[#131327] relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[20rem] sm:w-[25rem] h-auto rounded-xl p-4 border">
